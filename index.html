@@ -16,10 +16,7 @@
  
  
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-   <!--  <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
-    <link href="gallery-style.css" rel="stylesheet" type="text/css" /> -->
-
-     <!-- <script type="text/javascript" src="js/lightbox.js"></script> -->
+  
      <link rel="stylesheet" href="css/banner.css">
      <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
 
@@ -36,7 +33,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/main.js"></script>
 
-
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <link href="css/waypoints.css" rel="stylesheet"/>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/waypoints.js" type="text/javascript"></script>
     
      
       
@@ -69,7 +71,7 @@
                  
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="#portfolio-gallery">Portfolio</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="img/meganlandahl_resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#graph-skills">Skills</a></li>
                     <li><a href="#footer">Contact</a></li>
@@ -79,14 +81,22 @@
               </div><!-- /.container-fluid -->
             </nav>
         <div class="inner-container-1">
-          <h1>HERO IMAGE SAMPLE</h1>
-          <h2>Megan Landahl some additional text</h2>
-          <a class="btn" href="#portfolio-gallery">CLICK HERE</a>
+          <section class="os-animation" data-os-animation="bounceInDown" data-os-animation="0.3s">
+              <h1>Megan Landahl</h1>
+          </section>
+          <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".3s">
+            <h2>Some additional text</h2>
+          </section>
+
+          <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".3s">
+           <a class="btn" href="#portfolio-gallery">CLICK HERE</a>
+         </section>
         </div>
       </div>
 
 
-
+            
+         
       
         
      <div id="about">
@@ -95,34 +105,50 @@
           <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class='icon-center'>
-                      <i class="fas fa-cogs fa-7x" style="color: #826682;"></i>
-                      <h4 class="title-expertise">Drawing</h4>
+                      <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
+                      <i class="fas fa-cogs fa-7x" style="color: #00cdcd;"></i>
+                      </section>
                      </div>
+                      
+                    <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
+                      <h4 class="title-expertise">Drawing</h4>
+                    
                     
                     <p class="expertise-summary">lLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam.  </p>
-              
+                    </section>
                 </div>
          
 
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">  
                   <div class='icon-center'>
-                    <i class="fas fa-image fa-7x" style="color: #826682;"></i>
-                    <h4 class="title-expertise">Photoshop</h4>
+                    <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
+                    <i class="fas fa-image fa-7x" style="color: #00cdcd;"></i>
+                  </section>
                   </div> 
+                  <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
+                    <h4 class="title-expertise">Photoshop</h4>
+                  
                     
                     <p class="expertise-summary">In aliquam nunc nisi, ut ultrices nisl euismod id. Nam elementum turpis quis ultricies auctor. In bibendum ut metus in luctus. Fusce vitae rhoncus lorem. </p>
+                  </section>
               </div>
 
               <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                     <div class='icon-center'>
-                      <i class="fas fa-cogs fa-7x" style="color: #826682;"></i>
+                     <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.4s">
+                      <i class="fas fa-cogs fa-7x" style="color: #00cdcd;"></i>
+                      </section>
+                    </div>
+                     <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.4s">
                       <h4 class="title-expertise">Drawing</h4>
-                     </div>
+                     
                     <p class="expertise-summary">In aliquam nunc nisi, ut ultrices nisl euismod id. Nam elementum turpis quis ultricies auctor. In bibendum ut metus in luctus. Fusce vitae rhoncus lorem. </p>
+                  </section>
               </div>
 
             </div>
           </div>
+
       </div>
 
 
@@ -151,11 +177,13 @@
                 <a class="left carousel-control" href="#myCarousel-one" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-one" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
                 <div class="info-box">
-                  <div class="title">Port image #1</div>
-                  <div class="tag">Adobe</div>
+                  <div class="title">{Employerr}</div>
+                  <div class="tag">Full Stack Developer</div>
                   <div class="detail">
-                     felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim
-                      
+                     Created a full React app that allows employers to seek out potential new employees 
+                      HTML, CSS, Javascript/JQuery, React, React-Native
+
+                      <a href="https://employ-err.herokuapp.com/">Click Here!</a>
                   </div>
                   <button class="close" type="button" data-dismiss="modal">x</button>
                 </div>
@@ -166,7 +194,7 @@
             
           </div>
 
-       <!--  </div> -->
+        </div>
 
         <!-- <div class="modal-wrap "> -->
          <div class="modal" id="my-second-modal" style="max-width: 700px;">
@@ -192,12 +220,16 @@
                 <a class="left carousel-control" href="#myCarousel-two" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-two" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
                 <div class="info-box">
-                  <div class="title">Port image #1</div>
-                  <div class="tag">Adobe</div>
+                  <div class="title">Sherpa Mountain Rentals</div>
+                  <div class="tag">Full Stack Developer</div>
                   <div class="detail">
-                     felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim
-                      
-                  </div>
+                     Created a full React app that allows employers to seek out potential new employees 
+                     HTML, CSS, Javascript/JQuery, React, React-Native
+                   </div>
+                    <br>
+                    <br>
+                   <a target="_blank" href="https://guarded-everglades-78463.herokuapp.com/">View Site!</a>
+
                   <button class="close" type="button" data-dismiss="modal">x</button>
                 </div>  
           </div>
@@ -212,11 +244,11 @@
          <div class="modal" id="my-third-modal" style="max-width: 700px;">
                   <div id="myCarousel-three" class="carousel slide" data-interval="false">
                   <div class="carousel-inner">
-                    <div class="item active"> <img src="img/Port3afull.jpg" alt="item0">
+                    <div class="item active"> <img src="img/Port3a.jpg" alt="item0">
                     </div>
-                      <div class="item"><img src="img/Port3bfull.jpg" alt="item1">
+                      <div class="item"><img src="img/Port3b.jpg" alt="item1">
                       </div>
-                <div class="item"> <img src="img/Port3cfull.jpg" alt="item2">
+                <div class="item"> <img src="img/Port3c.jpg" alt="item2">
                   </div>
                 </div>
                 <!--Begin Previous and Next buttons-->
@@ -224,11 +256,14 @@
                 <a class="left carousel-control" href="#myCarousel-three" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-three" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
                 <div class="info-box">
-                  <div class="title">Port image #1</div>
-                  <div class="tag">Adobe</div>
+                  <div class="title">Bamazon</div>
+                  <div class="tag"> Back End Developer</div>
                   <div class="detail">
-                     felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim
-                      
+                    
+                    Amazon clone with a backend storefront that accesses and renders back end MySQL database based on customer purchases and inventory 
+                    Node.js, NPM Packages: Request, MySQL,
+                        
+                    <a href="https://github.com/meglambda/bamazon">Click Here!</a>
                   </div>
                   <button class="close" type="button" data-dismiss="modal">x</button>
                 </div>  
@@ -240,22 +275,29 @@
          <div class="modal" id="my-fourth-modal" style="max-width: 700px;">
                   <div id="myCarousel-four" class="carousel slide" data-interval="false">
                   <div class="carousel-inner">
-                    <div class="item active"> <img src="img/Port4afull.jpg" alt="item0">
-                    </div>
-                      <div class="item"><img src="img/Port4bfull.jpg" alt="item1">
+                      <div class="item active"> <img src="img/Port4a.jpg" alt="item0">
                       </div>
-                <div class="item"> <img src="img/Port4cfull.jpg" alt="item2">
-                  </div>
+                      <div class="item"><img src="img/Port4b.jpg" alt="item1">
+                      </div>
+                      <div class="item"><img src="img/Port4c.jpg" alt="item1">
+                      </div>
+                      <div class="item"><img src="img/Port4d.jpg" alt="item1">
+                      </div>
+                
                 </div>
                 <!--Begin Previous and Next buttons-->
 
                 <a class="left carousel-control" href="#myCarousel-four" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-four" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
                 <div class="info-box">
-                  <div class="title">Port image #1</div>
-                  <div class="tag">Adobe</div>
+                  <div class="title">Friend Finder - Heroku App</div>
+                  <div class="tag">Full Stack Web Application</div>
                   <div class="detail">
-                     felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim
+                     Full stack application that surveys users and matches the user with their “best friend” based on best overall match
+                    Node.js, NPM Packages: express, Body-parser, path
+                    HTML, CSS, Bootstrap, Javascript/JQuery, Heroku hosting
+
+                       <a href="https://rocky-peak-38527.herokuapp.com/survey">Click Here!</a>
                       
                   </div>
                   <button class="close" type="button" data-dismiss="modal">x</button>
@@ -270,22 +312,23 @@
          <div class="modal" id="my-fifth-modal" style="max-width: 700px;">
                   <div id="myCarousel-five" class="carousel slide" data-interval="false">
                   <div class="carousel-inner">
-                    <div class="item active"> <img src="img/Port5afull.jpg" alt="item0">
+                    <div class="item active"> <img src="img/Port6a.jpg" alt="item0">
                     </div>
-                      <div class="item"><img src="img/Port5bfull.jpg" alt="item1">
-                      </div>
-                <div class="item"> <img src="img/Port5cfull.jpg" alt="item2">
-                  </div>
+                  
                 </div>
                 <!--Begin Previous and Next buttons-->
 
                 <a class="left carousel-control" href="#myCarousel-five" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-five" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
                 <div class="info-box">
-                  <div class="title">Port image #1</div>
-                  <div class="tag">Adobe</div>
+                  <div class="title">LiriBot</div>
+                  <div class="tag">Node.js</div>
                   <div class="detail">
-                     felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim
+                     Command line node app to return tweets, song information or movie information. 
+                    App logs commands
+                    Node.js, NPM Packages: Request, Spotify, Twitter
+                    
+                    <a href="https://github.com/meglambda/LiriBot">Click Here!</a>
                       
                   </div>
                   <button class="close" type="button" data-dismiss="modal">x</button>
@@ -300,22 +343,28 @@
                    <div class="modal" id="my-sixth-modal" style="max-width: 700px;">
                             <div id="myCarousel-six" class="carousel slide" data-interval="false">
                             <div class="carousel-inner">
-                              <div class="item active"> <img src="img/Port6afull.jpg" alt="item0">
+                              <div class="item active"> <img src="img/Port6a.jpg" alt="item0">
                               </div>
-                                <div class="item"><img src="img/Port6bfull.jpg" alt="item1">
-                                </div>
-                          <div class="item"> <img src="img/Port6cfull.jpg" alt="item2">
-                            </div>
+                              <div class="item"><img src="img/Port6b.jpg" alt="item1">
+                              </div>
+                              <div class="item"> <img src="img/Port6c.jpg" alt="item2">
+                              </div>
+                              <div class="item"> <img src="img/Port6d.jpg" alt="item2">
+                              </div>
+                              <div class="item"> <img src="img/Port6e.jpg" alt="item2">
+                               </div>
                           </div>
                           <!--Begin Previous and Next buttons-->
 
                           <a class="left carousel-control" href="#myCarousel-six" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel-six" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
                           </div>
                           <div class="info-box">
-                            <div class="title">Port image #1</div>
-                            <div class="tag">Adobe</div>
+                            <div class="title">The City Guide</div>
+                            <div class="tag">API web application</div>
                             <div class="detail">
-                               felis id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim
+                               A travel front end web application utilizing various API calls to retrieve information about weather, local events, hotels in any given destination around the world. 
+
+                               <a href="https://meglambda.github.io/googlerAPI/index.html">Click Here!</a>
                                 
                             </div>
                             <button class="close" type="button" data-dismiss="modal">x</button>
@@ -329,18 +378,76 @@
           <div class="col-lg-12 col-md-12 col-sm-12">
            <!--  <div class="header">Portfolio</div> -->
            <!-- <h3>Portfolio</h3> -->
+           <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
+            <div class="wrapper">
+              <img src="img/Port1aFull.jpg" style="width: 33%; height: 33%;" alt="Park"/>
+                 <div class="overlay">
+                  <div class="content">
+                      <span data-toggle="modal" data-target="#my-first-modal">
+                       <a class="btn" href="#myCarousel-one" data-slide-to="0">Learn More</a>
+                      </span>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            
+            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
+             <div class="wrapper">
+              <img src="img/port2afull.jpg" style="width: 33%; height: 33%;" alt="Park">
+                 <div class="overlay">
+                  <div class="content">
+                      <span data-toggle="modal" data-target="#my-second-modal"><a class="btn" href="#myCarousel-two" data-slide-to="0">Learn More</a></span>
+                    </div>
+                  </div>
+              </div>
+            </section>
 
-            <span data-toggle="modal" data-target="#my-first-modal"><a href="#myCarousel-one" data-slide-to="0"><img src="img/Port1aFull.jpg" style="width: 33%; height: 33%;" alt="Park"></a></span>
+          <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
+            <div class="wrapper">
+              <img src="img/Port3afull.jpg" style="width: 33%; height: 33%;" alt="Park">
+                 <div class="overlay">
+                  <div class="content">
+                      <span data-toggle="modal" data-target="#my-third-modal"><a class="btn" href="#myCarousel-three" data-slide-to="0">Learn More</a></span>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            
+            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">
+              <div class="wrapper">
+                <img src="img/Port4fulla.jpg" style="width: 33%; height: 33%;" alt="Park">
+                 <div class="overlay">
+                  <div class="content">
+                         <span data-toggle="modal" data-target="#my-fourth-modal"><a class="btn" href="#myCarousel-four" data-slide-to="0">Learn More</a></span>
+                    </div>
+                  </div>
+              </div>
+            </section>
+  
+            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">
+              <div class="wrapper">
+                <img src="img/Port5full.jpg" style="width: 33%; height: 33%;" alt="Park">
+                 <div class="overlay">
+                  <div class="content">
+                      <span data-toggle="modal" data-target="#my-fifth-modal"><a class="btn"href="#myCarousel-five" data-slide-to="0">Learn More</a></span>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            
+            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s">
+              <div class="wrapper">
+                <img src="img/port6full.jpg" style="width: 33%; height: 33%;" alt="Park">
+                 <div class="overlay">
+                  <div class="content">
+                      <span data-toggle="modal" data-target="#my-sixth-modal"><a class="btn" href="#myCarousel-six" data-slide-to="0">Learn More</a></span>
+                    </div>
+                  </div>
+              </div>
+            </section>
 
-            <span data-toggle="modal" data-target="#my-second-modal"><a href="#myCarousel-two" data-slide-to="0"><img src="img/port2afull.jpg" style="width: 33%; height: 33%;" alt="Park"></a></span>
 
-            <span data-toggle="modal" data-target="#my-third-modal"><a href="#myCarousel-three" data-slide-to="0"><img src="img/Port3a.jpg" style="width: 33%; height: 33%;" alt="Park"></a></span>
-
-            <span data-toggle="modal" data-target="#my-fourth-modal"><a href="#myCarousel-four" data-slide-to="0"><img src="img/Port4a.jpg" style="width: 33%; height: 33%;" alt="Park"></a></span>
-
-            <span data-toggle="modal" data-target="#my-fifth-modal"><a href="#myCarousel-five" data-slide-to="0"><img src="img/Port5a.jpg" style="width: 33%; height: 33%;" alt="Park"></a></span>
-
-            <span data-toggle="modal" data-target="#my-sixth-modal"><a href="#myCarousel-six" data-slide-to="0"><img src="img/Port6a.jpg" style="width: 33%; height: 33%;" alt="Park"></a></span>
+            
   
            
           </div>
@@ -357,18 +464,26 @@
   
 
       <div class= "container-fluid" id="help">
+           <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
            <div class="header">Expertise</div>
+           </section>
            <div class="col-lg-6 col-md-6 col-sm-6">
+            <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay=".4s">
              <div class="words"><p>id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim</p>
 
              <p>id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim</p>
 
              <p>id interdum interdum, sapien elit egestas tellus, ac maximus felis quam eget quam. Morbi ullamcorper, dui vehicula vehicula semper, enim mauris condimentum nibh, sed ultrices tortor diam mattis magna. Pellentesque laoreet augue quis sapien placerat condim</p>
 
+           
+            </div>
+        
            </div>
-           </div>
+            </section>
+            
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="flex">
+                <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
                 <div class="bar flex">
                   <div class="bar fill" style="width:95%">
                     <div class="tag bold flex">Photoshop</div>
@@ -376,7 +491,9 @@
                   </div>
                   <span style="color:black">95%</span>
                 </div>
-
+              </section>
+              
+              <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.1s">
                 <div class="bar flex">
                   <div class="bar fill" style="width:90%">
                     <div class="tag bold flex">Illustrator</div>
@@ -384,7 +501,9 @@
                   </div>
                    <span style="color:black">90%</span>
                 </div>
+                </section>
 
+                <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
                 <div class="bar flex">
                   <div class="bar fill" style="width:95%">
                     <div class="tag bold flex">Indesign</div>
@@ -392,7 +511,9 @@
                   </div>
                    <span style="color:black">95%</span>
                 </div>
+              </section>
 
+                <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                 <div class="bar flex">
                   <div class="bar fill" style="width:85%">
                     <div class="tag bold flex">Captivate</div>
@@ -400,7 +521,9 @@
                   </div>
                    <span style="color:black">85%</span>
                 </div>
-
+              </section>
+  
+              <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.4s">
                 <div class="bar flex">
                   <div class="bar fill" style="width:80%">
                     <div class="tag bold flex">Powerpoint</div>
@@ -408,7 +531,9 @@
                   </div>
                    <span style="color:black">80%</span>
                 </div>
+              </section>
 
+              <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.5s">
                 <div class="bar flex">
                   <div class="bar fill" style="width:80%">
                     <div class="tag bold flex">Excel</div>
@@ -416,11 +541,11 @@
                   </div>
                    <span style="color:black">80%</span>
                 </div>
-                
+              </section>
               </div>
 
             </div>
-
+          
 
 
       </div>
@@ -432,8 +557,12 @@
     
      <div id="need-help">
         <div class="container-fluid">
+          <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
           <div class="header">Want to work together?</div>
+        </section>
+        <section class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
           <div class="words">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it</div>
+        </section>
 
         </div>
       </div>

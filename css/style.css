@@ -148,7 +148,7 @@ body, html {
     z-index: 100;
     
 }
-.modal-wrap .modal {
+.modal {
 	
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 	/*position: absolute;*/
@@ -169,14 +169,14 @@ body, html {
 	border-top: 3px solid #1B242F;
 	padding: 15px 10px 85px 10px;
 }
-.modal-wrap .title {
+.title {
 font-size: 16pt;
     line-height: 20pt;
     font-family: 'Raleway-bold';
 
 }
 
-.modal-wrap .tag {
+.tag {
     display: block;
     font-weight: 300;
     color: #c0c0c0;
@@ -186,7 +186,7 @@ font-size: 16pt;
     font-size: 8pt;
 }
 
-.modal-wrap .detail {
+.detail {
     font-size: 12pt;
     line-height: 14pt;
     margin-top: 13px;
@@ -252,7 +252,7 @@ font-size: 16pt;
 
 #need-help {
 	height: 500px;
-	background-color: #31708f;
+	background-color: #00cdcd;
 
 }
 /*
@@ -327,3 +327,46 @@ img {
   opacity: 1;
 }
 */
+
+        .wrapper{
+    		font-family: sans-serif;
+    		width: 80%;
+    		margin:  0 auto;
+    		position: relative;
+    	}
+    	#picture{
+    		opacity: 1; 
+    		display: block;
+    		width: 100%;
+    		height: auto;
+    		transition: .5s ease;
+    	}
+    	.content{
+    		position: absolute;
+    		top: 45%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		-ms-transform: translate(-50%, -50%);
+    		font-size: 60px;
+    		text-transform: uppercase;
+    		color: #fff;
+    		white-space: nowrap;
+    		overflow: hidden;
+    	}
+    	.content a {
+    		font-size: 24px;
+    		display: block;
+    		/*background-color: #00cdcd;*/
+    		text-align: center;
+    		padding: 10px;
+    		cursor: pointer;
+    	}
+		.overlay {
+			opacity: 0;
+		}
+		.wrapper:hover img{
+			opacity: 0.5;
+		}
+		.wrapper:hover .overlay {
+			opacity: 1;
+		}
