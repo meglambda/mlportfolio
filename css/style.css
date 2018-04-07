@@ -58,7 +58,8 @@ p {
 #about {
 	background-color: #FFF;
 	padding-bottom: 100px;
-	padding-top: 100px;
+	padding-top: 30px;
+	margin-top: 0;
 
 }
 
@@ -188,7 +189,8 @@ font-size: 16pt;
     color: #c0c0c0;
     font-family: 'Raleway-bold';
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;*/
+    padding-top: 8px;
     font-size: 8pt;
 }
 
@@ -309,6 +311,9 @@ font-size: 16pt;
 /*slider logo*/
 		#box1 {
 			background-color: blue;
+			border-bottom: none;
+			margin-bottom: none;
+			padding-bottom: none;
 		}
 
 		.slider {
@@ -380,4 +385,6 @@ font-size: 16pt;
         flex: 100%;
         max-width: 100%;
     }
+
+    
 }
