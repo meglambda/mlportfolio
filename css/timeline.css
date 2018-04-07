@@ -1,7 +1,7 @@
 body {
   color: #768390;
   background: #FFF;
-  font-family: "Effra", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
@@ -235,6 +235,7 @@ a:hover {
   }
   .timeline-centered .period .timeline-title {
     left: auto;
+    text-align: left;
   }
 }
 

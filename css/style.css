@@ -243,7 +243,7 @@ font-size: 16pt;
 /*headers*/
 
 .header {
-	font-size: 25pt;
+	font-size: 35pt;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
     font-weight: 700;
@@ -553,5 +553,5 @@ font-size: 16pt;
 	text-align: center;
 	color: white;
 	font-weight: 1.7em;
-	
+
 }
