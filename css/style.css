@@ -1,4 +1,4 @@
-/*navigation*/
+navigation*/
 body {
 	margin: 0;
 	padding: 0;
@@ -94,14 +94,14 @@ p {
 }
 #help {
 	background-color: #fff;
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 	
 
 	
 
 }
 #footer {
-	background-color: grey;
+	background-color: #4C4B54;
 }
 
 
@@ -215,7 +215,7 @@ font-size: 16pt;
 }
 .bar {
 	color: #666;
-	height: 22px;
+	height: 29px;
 	position: relative;
 	background-color: #eee;
 	margin: 0 0 12px 0;
@@ -259,8 +259,16 @@ font-size: 16pt;
 
 
 #need-help {
-	height: 500px;
-	background-color: #00cdcd;
+	
+	margin: 0;
+	height: 40vh;
+      width: 100%;
+      background-color: white;
+      background-size: cover;
+      display: table;
+      position: relative;
+      z-index: 0;
+      background-attachment: fixed;
 
 }
 
@@ -310,10 +318,11 @@ font-size: 16pt;
 
 /*slider logo*/
 		#box1 {
-			background-color: blue;
+			background-color: #9932CC;
+			background: linear-gradient(to right, #312959 ,  #008080);
 			border-bottom: none;
 			margin-bottom: none;
-			padding-bottom: none;
+			padding-bottom: 0px ;
 		}
 
 		.slider {
@@ -386,5 +395,163 @@ font-size: 16pt;
         max-width: 100%;
     }
 
-    
+
+}
+
+
+
+
+.lightbox .row > .column {
+  padding: 0 8px;
+}
+
+.lightbox .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lightbox .column {
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+/* The Modal (background) */
+.lightbox .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 75px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.lightbox .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 65%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.lightbox img {
+  margin-bottom: -4px;
+  /*width: 200px;
+  height: 200px;*/
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.lightbox img.hover-shadow {
+  transition: 0.3s
+}
+
+.lightbox .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/*.words {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-top: 15px;
+	/*text-transform: uppercase;*/
+	/*margin-right: 30px;
+	margin-left: 30px;
+	font-size: 2em;*/
+
+.footer-copyright {
+	text-align: center;
+	color: white;
+}
+.footer-copyright h1 {
+	text-align: center;
+	color: white;
+	font-weight: 1.7em;
+	
 }
