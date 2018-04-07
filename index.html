@@ -9,16 +9,16 @@
       	<!-- Latest compiled and minified CSS -->
    <!--  <link rel="stylesheet" href="css/bootstrap.css"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"> -->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
  
  
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   
-     <link rel="stylesheet" href="css/banner.css">
-     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="css/banner.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
 
 
     <link href="css/navlink.css" rel="stylesheet" type="text/css" />
@@ -40,7 +40,11 @@
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
     
-     
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        
+
       
     <style>
     /* Stackoverflow preview fix, please ignore */
@@ -49,6 +53,7 @@
 </head>
    <body>
       <div class="img-container-1">
+        <section class="os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0s">
         <nav class="navbar my-navbar navbar-default navbar-fixed-top">
               <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,10 +64,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">Logo Here icon</a>
+                  <section class="os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0s"><a class="navbar-brand" href="#">Logo Here icon</a>
+                  </section>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
+                
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                    
@@ -80,6 +87,7 @@
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
             </nav>
+          </section>
         <div class="inner-container-1">
           <section class="os-animation" data-os-animation="bounceInDown" data-os-animation="0.3s">
               <h1>Megan Landahl</h1>
@@ -374,15 +382,18 @@
                  <!--  </div> -->
 
           
-        <div class="row" id="gal">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-           <!--  <div class="header">Portfolio</div> -->
-           <!-- <h3>Portfolio</h3> -->
+     
+         <div class="header">Portfolio</div>
+           <h3>Portfolio</h3>
+
+          <div class="row">
+            <div class="column">
            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
             <div class="wrapper">
-              <img src="img/Port1aFull.jpg" style="width: 33%; height: 33%;" alt="Park"/>
+              <img src="img/Port1aFull.jpg" style="width: 100%;" alt="Park"/>
                  <div class="overlay">
                   <div class="content">
+                      <!-- <h3>{Employerr}</h3> -->
                       <span data-toggle="modal" data-target="#my-first-modal">
                        <a class="btn" href="#myCarousel-one" data-slide-to="0">Learn More</a>
                       </span>
@@ -390,10 +401,10 @@
                   </div>
               </div>
             </section>
-            
+         
             <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.1s">
              <div class="wrapper">
-              <img src="img/port2afull.jpg" style="width: 33%; height: 33%;" alt="Park">
+              <img src="img/port2afull.jpg" style="width: 100%;" alt="Park">
                  <div class="overlay">
                   <div class="content">
                       <span data-toggle="modal" data-target="#my-second-modal"><a class="btn" href="#myCarousel-two" data-slide-to="0">Learn More</a></span>
@@ -401,10 +412,11 @@
                   </div>
               </div>
             </section>
-
+           </div>
+          <div class="column">
           <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
             <div class="wrapper">
-              <img src="img/Port3afull.jpg" style="width: 33%; height: 33%;" alt="Park">
+              <img src="img/Port3afull.jpg" style="width: 100%;" alt="Park">
                  <div class="overlay">
                   <div class="content">
                       <span data-toggle="modal" data-target="#my-third-modal"><a class="btn" href="#myCarousel-three" data-slide-to="0">Learn More</a></span>
@@ -415,7 +427,7 @@
             
             <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">
               <div class="wrapper">
-                <img src="img/Port4fulla.jpg" style="width: 33%; height: 33%;" alt="Park">
+                <img src="img/Port4fulla.jpg" style="width: 100%;" alt="Park">
                  <div class="overlay">
                   <div class="content">
                          <span data-toggle="modal" data-target="#my-fourth-modal"><a class="btn" href="#myCarousel-four" data-slide-to="0">Learn More</a></span>
@@ -423,10 +435,11 @@
                   </div>
               </div>
             </section>
-  
+           </div>
+          <div class="column">
             <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">
               <div class="wrapper">
-                <img src="img/Port5full.jpg" style="width: 33%; height: 33%;" alt="Park">
+                <img src="img/Port5full.jpg" style="width: 100%;" alt="Park">
                  <div class="overlay">
                   <div class="content">
                       <span data-toggle="modal" data-target="#my-fifth-modal"><a class="btn"href="#myCarousel-five" data-slide-to="0">Learn More</a></span>
@@ -437,7 +450,7 @@
             
             <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s">
               <div class="wrapper">
-                <img src="img/port6full.jpg" style="width: 33%; height: 33%;" alt="Park">
+                <img src="img/port6full.jpg" style="width: 100%; height: 100%;" alt="Park">
                  <div class="overlay">
                   <div class="content">
                       <span data-toggle="modal" data-target="#my-sixth-modal"><a class="btn" href="#myCarousel-six" data-slide-to="0">Learn More</a></span>
@@ -445,14 +458,11 @@
                   </div>
               </div>
             </section>
-
-
-            
-  
-           
+          </div>
           </div>
 
-        </div>
+
+        
       </div>
     </div>
 
@@ -553,8 +563,37 @@
       <div class="container-fluid">
         
       </div>
+          
+     <div class="your-class" id="box1">
+        <section class="regular slider">
+          <div>
+            <img src="img/kippcolorado_logo_white.png">
+          </div>
+          <div>
+            <img src="img/Depauwsoftball_white.png">
+          </div>
+          <div>
+            <img src="img/chemical_logo_white.png">
+          </div>
+          <div>
+            <img src="img/marian_university_white.png">
+          </div>
+          <div>
+            <img src="img/university_denver_white.png">
+          </div>
+          <div>
+            <img src="img/phet_logo_white.png">
+          </div>
+          <div>
+            <img src="img/kippcolorado_logo_white.png">
+          </div>
+          <div>
+            <img src="img/depauw_logo_white.png">
+          </div>
+     </section>
 
-    
+       
+    </div>
      <div id="need-help">
         <div class="container-fluid">
           <section class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
@@ -609,7 +648,29 @@
     
     </section>
       <!--/.Footer-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+ <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
+ <!--  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+  
+    $(document).ready(function(){
+
+      $(".regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4, 
+        autoplay: true,
+        autoplaySpeed: 2000
+      });
+    
+    });
+      
+    </script>
+
+
   </body>
  
 </html>

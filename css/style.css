@@ -1,5 +1,11 @@
 /*navigation*/
-
+body {
+	margin: 0;
+	padding: 0;
+}
+p {
+	text-align: left;
+}
 .banner {
 	width: 100%;
 	height: 700px;
@@ -25,7 +31,7 @@
 	color: white;
 }
 
-#gal {
+#portfolio-gallery {
 	padding-bottom: 200px;
 }
 
@@ -241,7 +247,7 @@ font-size: 16pt;
     font-weight: 700;
 	color: #444649;
 	position: relative;
-	padding-top: 20px;
+	padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -255,78 +261,7 @@ font-size: 16pt;
 	background-color: #00cdcd;
 
 }
-/*
-#hover {
-  position: relative;
-  margin-top: 100px;
-  width: 500px;
-  height: 300px;
 
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
-}
-
-.container:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, .3);
-}
-
-img {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  left: 0;
-}
-
-.title {
-  position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
-  transition: top .5s ease;
-}
-
-.container:hover .title {
-  top: 90px;
-}
-
-.button {
-  position: absolute;
-  width: 500px;
-  left:0;
-  top: 180px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity .35s ease;
-}
-
-.button a {
-  width: 200px;
-  padding: 12px 48px;
-  text-align: center;
-  color: white;
-  border: solid 2px white;
-  z-index: 1;
-}
-
-.container:hover .button {
-  opacity: 1;
-}
-*/
 
         .wrapper{
     		font-family: sans-serif;
@@ -365,8 +300,84 @@ img {
 			opacity: 0;
 		}
 		.wrapper:hover img{
-			opacity: 0.5;
+			opacity: 0.2;
 		}
 		.wrapper:hover .overlay {
 			opacity: 1;
 		}
+
+/*slider logo*/
+		#box1 {
+			background-color: blue;
+		}
+
+		.slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .1s;
+      opacity: .5;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 125px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 5px;
+
+}
+
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
